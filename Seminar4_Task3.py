@@ -9,6 +9,9 @@
 # В решении должны быть и запись в файл, и чтение из файла.
 
 from random import randint
-def while to file(n):
-    with open ('file.txt', 'w') as file:
-        file.write(f'{randint(-n,n)}')
+def write_to_file(n):
+    with open ('file_seminar4.txt', 'w') as file:
+        for _ in range(n):
+            file.write(f'{randint(-n,n)}')
+
+write_to_file(5)
